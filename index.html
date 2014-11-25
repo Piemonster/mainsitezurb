@@ -1,327 +1,227 @@
-
 <!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
+<html>
 <head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Piemonster</title>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <link rel="stylesheet" href="stylesheets/normalize.css" />
-  
-  <link rel="stylesheet" href="stylesheets/app.css" />
-  <link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css'>
+  <!-- Site Properities -->
+  <title>Homepage Example - Semantic</title>
 
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="packaged/css/semantic.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="packaged/javascript/semantic.js"></script>
+  <script src="main.js"></script>
 
 </head>
-<body>
-
-
-	<div class="row">
-        <div class="large-3 columns">
-            <img src="img/logo.png" >
-            <h4>What do we do?</h4>
-            <p>We build beautiful software.</p>
-            <h4>Our Team</h4>
-            <ul class="disc">
-                <li><a href="http://github.com/chrisfranklin/">Chris Franklin</a><br />Founder and CEO</li>
-                
-            </ul>
-            <h4>Resources</h4>
-            <ul class="disc">
-                <li><a href="http://github.com/piemonster/">Piemonster on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-                <li><a href="http://facebook.com/piemonster/">Piemonster on Facebook</a><br />News and updates.</li>
-            </ul>
+<body id="home">
+  <div class="ui inverted page grid masthead segment">
+    <div class="column">
+      <div class="inverted secondary pointing ui menu">
+        <div class="header item">Piemonster.me</div>
+        <div class="right menu">
+          <div class="ui top right pointing mobile dropdown link item">
+            Menu
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <!-- <a class="item">Support</a> -->
+              <a class="item" href='#footer'>Contact</a>
+            </div>
+          </div>
+          <!-- <a class="item">Support</a> -->
+          <a class="item" href='#footer'>Contact</a>
         </div>
-		<div class="large-9 columns">
-			<h1> Welcome to Piemonster.me </h1><hr>
+      </div>
+      <img src="images/logo.png" class="ui medium image">
+      <div class="ui hidden transition information">
+        <h1 class="ui inverted header">
+          We build web apps.
+        </h1>
+        <p>Simply, intuitively and quickly.</p></br>
+<!--         <div class="large basic inverted animated fade ui button">
+          <div class="visible content">Get in touch!</div>
+          <div class="hidden content">Contact Us</div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="ui page grid overview segment">
+    <div class="ui two wide column"></div>
+    <div class="twelve wide column">
+      <div class="ui three column center aligned stackable divided grid">
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular book link icon"></i>
+            Communication
+          </div>
+          <p>We will keep in constant communication so that you get the best results in the shortest time.</p>
+          <!-- <p><a class="ui teal right labeled icon button" href="#">Learn <i class="right long arrow icon"></i></a></p> -->
+        </div>
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular code link icon"></i>
+            Clean Code
+          </div>
+          <p>You need a solid foundation that can be built upon allowing your site to grow with your requirements.</p>
+          <!-- <p><a class="ui teal right labeled icon button" href="#">Research <i class="right long arrow icon"></i></a></p> -->
+        </div>
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular user link icon"></i>
+            Quality Assurance
+          </div>
+          <p>Nobody likes errors or slow performance, we take the time to comprehensively test your project.</p>
+          <!-- <p><a class="ui teal right labeled icon button" href="#">Share <i class="right long arrow icon"></i></a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="ui inverted page grid stackable relaxed feature segment">
+    <div class="row">
+      <div class="column">
+        <h1 class="center aligned ui header">
+          Our Work
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="sixteen wide column">
+        <h2 class="ui header">A multi-modal messaging system for one of the largest multi-national payment processing companies</h2>
+        <p>Whilst we are unable to discuss details and names we are proud to announce the project has entered the comissioning phase and is currently sending millions of test notifications per day. The system is capable of sending millions of emails and SMS per day. We helped our client design a system that could serve their current needs efficiently whilst allowing simple scaling to much larger projected future needs.</p>
 
-	    <div class="row">
-                <div class="large-6 columns">
-                    <a href="http://nomoresheep.com"><img src="img/farmfresh.png"></a>
-                    <a href="http://nomoresheep.com"><h3>Farm Fresh</h3></a>
-                    <p> 
-                        FarmFresh is a dating website for farmers. Together we can end lonely farmers. Forever. The site provides a chatroom with chatbots and allows users to upload profiles.
-                    </p>
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Web Sockets</li>
-                                <li>NLTK</li>
-                                <li>REST API</li>
-                                <li>Contacts Import</li>
-                                <li>Geolocation</li>
-                            </ul>
-                            <h4> Status </h4>
-                            <h5> Online </h5>
-                </div>
-                <div class="large-6 columns">
-                    <img src="img/tartcc.png"></br></br></br></br>
-                    <h3>Tart.cc</h3>
-                    <p> Tart provide web presence services to companies and individuals, we manage all aspects of your companies digital presence so you can worry about managing your company.</p>
+        <div class="ui inverted section divider"></div>
 
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Web Hooks</li>
-                                <li>Multi-Tenant</li>
-                                <li>Multi-Schema</li>
-                                <li>Content Management System</li>
-				<li>Payment Gateway</li>
+        <h2 class="ui header">We built a data aggregation tool to power an award winning advertising campaign.</h2>
+        <p>Our system was responsible for aggregating, sorting and providing a huge volume of real-time data to power a city-wide data driven advertising campaign for a world leading search and mobile company. The data was sourced from multiple 3rd parties and due to the quantity of information the utmost care had to be taken not to overload external providers. We were initially approached by our client who wanted help scaling a prototype they had built. We ended up building a completely new system that can scale not just citywide but countrywide and worldwide too.</p>
 
-                            </ul>
+        <div class="ui inverted section divider"></div>
 
-                            <h4> Status </h4>
-                            <h5> In Development </h5>
+        <h2 class="ui header">Our team created a time and resource planning application for a large London tech agency.</h2>
+        <p>We built a SaaS application that allowed the tracking of people, tasks and time in a tech agency environment. The project is currently being used internally with a view to rolling it out to external customers by the middle of next year. The system was built in a way that lets it scale from 1 agency to 1000's without human intervention. </p>
 
-                </div>
+        <div class="ui inverted section divider"></div>
+
+        <h2 class="ui header">A startup needed a system to create and manage innovative social media marketing campaigns.</h2>
+        <p>We delivered a system that ran several major marketing campaigns for large high street firms over the holiday season. Timing was tight and the budget was tighter but the promotions ran, thousands of emails were sent and the system excelled itself.</p>
+
+      </div>
+      <!-- <div class="six wide column">
+        <div class="ui secondary form segment">
+          <h3 class="ui header">Get Our Amazing Newsletter Bi-Daily</h3>
+          <p>Sign up and get spammed with cats every day. We have no unsubscribe button!</p>
+          <div class="field">
+            <div class="ui left icon action input">
+              <i class="user icon"></i>
+              <input name="email" type="text" placeholder="name@email.com">
+              <div class="ui teal submit button">Sign up</div>
             </div>
-	    <hr>
-            <div class="row">
-                <div class="large-6 columns">
-                    <a href="http://tablesurf.in"><img src="img/tablesurf.png"></a>
-                    <a href="http://tablesurf.in"><h3>TableSurf</h3></a>
-                    <p> 
-                        TableSurf.in connects people who want to cook with people who want to eat. We aim to reduce food wastage and encourage community spirit by getting people together to share meals. We have tried to make it as easy as possible to import your friends from multiple sources to get up and running quickly. Why not see if anyone is hungry in your area?
-                    </p>
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Field Autocompletes</li>
-                                <li>OAuth</li>
-				<li>Lazy Signup</li>
-                                <li>REST API</li>
-                                <li>Contacts Import</li>
-                                <li>Geolocation</li>
-				<li>Blog</li>
-                                <li><a href="http://yummly.com"> Yummly integration </a></li>
-                            </ul>
-                            <h4> Status </h4>
-                            <h5> Online </h5>
-                </div>
-                <div class="large-6 columns">
-                    <img src="img/tablesurf2.png">
-                    <h3>TableSurf Single Page</h3>
-                    <p> We are building a frontend for TableSurf.in that consumes the API provided by the current system. It is hoped this will enable us to leverage tools such as <a href="http://phonegap.com/"> PhoneGap </a> to provide a native experience on phones but maintaining one unified codebase. The quality of the application will be greatly increased when we have finished. We hope to by live by the end of February. </p>
+          </div>
+          <div class="ui error message"></div>
+        </div>
+      </div> -->
+    </div>
+  </div>
 
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>RequireJS</li>
-                                <li>jQuery</li>
-                                <li>Backbone.js</li>
-                                <li>Lodash</li>
-                                <li>Mocha</li>
-                                <li>Phonegap</li>
-                                <li>Single Page</li>
-                                <li>JSON</li>
-                            </ul>
-
-                            <h4> Status </h4>
-                            <h5> In Development </h5>
-
-                </div>
+  <div class="ui page grid stackable segment">
+    <div class="row">
+      <div class="column">
+        <h1 class="center aligned ui header">
+          Who have we worked with?
+        </h1>
+        <div class="ui horizontal divider"><i class="heart icon"></i></div>
+      </div>
+    </div>
+    <div class="center four column aligned row">
+      <div class="column">
+        <div class="ui text shape">
+          <div class="sides">
+            <div class="active side">
+              <img src="images/clients/rga.png" width='120px' class="ui image">
             </div>
-
-            <hr>
-            <div class="row">
-                <div class="large-6 columns">
-                    <img src="img/gamecology.png">
-                    <h3>Gamecology #1</h3>
-                    <p> As a user plays games and unlocks more achievements they are displayed adverts, these adverts generate revenue which is donated to a charity of the user's choice. This was a collaborative project which grew from a friend's university dissertation.</p>
-
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Twitter Bootstrap</li>
-                                <li>Flash Games </li>
-                                <li>Ajax</li>
-				<li>Polling Chat</li>
-                            </ul>
-
-                            <h4> Status </h4>
-                            <h5> Replaced by Gamecology #2 </h5>
-
-                </div>
-                <div class="large-6 columns">
-                    <img src="img/gamecology2.png">
-                    <h3>Gamecology #2</h3>
-                    <p> We rebuilt Gamecology using the knowledge we had gained over the last 2 years. We decided to try something different and used Compass, Sass and the Zurb Framework. We also started updating the games to HTML5 from flash for compatibility.</p>
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Zurb Framework</li>
-                                <li>HTML5 Games</li>
-                                <li>REST API</li>
-                                <li>Socket.IO Chat</li>
-                            </ul>
-
-                            <h4> Status </h4>
-                            <h5> Awaiting Games </h5>
-
-                </div>
+            <!-- <div class="side">
+              <i class="huge circular facebook icon"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui text shape">
+          <div class="sides">
+            <div class="active side">
+              <img src="images/clients/bio.png" width='120px' class="ui image">
             </div>
-            <hr>
-            <div class="row">
-                <div class="large-6 columns">
-                    <img src="img/piemonster.png">
-                    <h3>Piemonster.me #1</h3>
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Mezzanine CMS</li>
-                                <li>Support Desk</li>
-                                <li>Blog</li>
-                                <li>Hidden Gandalf</li>
-                            </ul>
-                            <h4> Status </h4>
-                            <h5> Replaced by the site you are on. </h5>
-
-                </div>
-                <div class="large-6 columns">
-                    <img src="img/piemonster2.png">
-                    <h3>Piemonster.me #2</h3>
-                    <div class="row">
-                        <div class="span5">
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Themes</li>
-                                <li>Github Integration</li>
-                                <li>Fiber CMS</li>
-                                <li>REST API</li>
-                            </ul>
-                        </div>
-                        <div class="span7">
-                            <h4> Status </h4>
-                            <h5> Replaced by the site you are on. </h5>
-                        </div>
-                    </div>
-                </div>
+            <!-- <div class="side">
+              <i class="huge circular facebook icon"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui text shape">
+          <div class="sides">
+            <div class="active side">
+              <img src="images/clients/iad.png" width='120px' class="ui image">
             </div>
-            <hr>
-            <div class="row">
-                <div class="large-6 columns">
-                    <img src="img/livelong.png">
-                    <h3>Live Long Design</h3>
-                    <p> We built this really simple brochure site for a friend's eco-design company. Unfortunately the company is on hold at the moment due to unforeseen circumstances. We wish Sam the best of luck with everything!</p>
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Themes</li>
-                                <li>Github Integration</li>
-                                <li>Fiber CMS</li>
-                                <li>REST API</li>
-                            </ul>
-                            <h4> Status </h4>
-                            <h5> Replaced by the site you are on. </h5>
-                </div>
-                <div class="large-6 columns">
-                    <a href="http://woo.piemonster.me/"><img src="img/tweetwoo.png"></a>
-                    <a href="http://woo.piemonster.me/"><h3>Tweet-to-Woo</h3></a>
-                    <p> This was a simple project we did to play with Mezzanine CMS. We have included it here because it has a nice description of some of the technologies we use. This was the first project we used Amazon EC2 for.</p>
-
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Mezzanine CMS</li>
-                                <li>Twitter Integration</li>
-                                <li>Celery Tasks</li>
-                                <li>Amazon EC2</li>
-                            </ul>
-                            <h4> Status </h4>
-                            <h5> Online </h5>
-                </div>
+            <!-- <div class="side">
+              <i class="huge circular flickr icon"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui text shape">
+          <div class="sides">
+            <div class="active side">
+              <img src="images/clients/phb.png" width='120px' class="ui image">
             </div>
-            <hr>
-            <div class="row">
-                <div class="large-6 columns">
-                    <img src="img/allofit.png">
-                    <h3>All of it Audio</h3>
-                    <p> Great value sound reinforcement and audio system hire in the tri-county area. They have a wide range of refurbished equipment for sale and can provide for all of your audio technician requirements.</p>
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Mezzanine CMS</li>
-                                <li>E-commerce</li>
-                                <li>Report Generation</li>
-                                <li>Email Reminders</li>
-                            </ul>
-                            <h4> Status </h4>
-                            <h5> Awaiting launch. </h5>
-                </div>
-                <div class="large-6 columns">
-                    <img src="img/artforart.png">
-                    <h3>Art for Art</h3>
-                    <p> This was a promotional site for a friends band, people who liked the band could upload a drawing, a poem or any other piece of artistic content under a creative commons license in return for a free EP </p>
-                            <h4> Technologies </h4>
-                            <ul>
-                                <li>Google App Engine</li>
-                                <li>NoSQL</li>
-                                <li>Multiple Versions</li>
-                                <li>Print Marketing Campaign</li>
-                            </ul>
-                            <h4> Status </h4>
-                            <h5> Retired. </h5>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="large-6 columns">
-                    <img src="img/keyboard.png">
-                    <h3>Acoustic Keyboard Logger</h3>
-                    <p>
-                        It is possible, using a microphone, to capture the sound of keys on a QWERTY keyboard being pressed. These sounds can then be analyzed and an accurate reconstruction of the typed text can be built. We spent a weekend exploring how accurately we could do this. If you would like a copy of the training data we have then please email us. 
-                </div>
-                <div class="large-6 columns">
-                    <img src="img/facerec.jpg"></br></br>
-                    <h3>Face Recognition System</h3>
-                    <ul>
-                        <li>Recognizes 10 users with 95% accuracy.</li>
-                        <li>Reinforcement Learning</li>
-                        <li>New User Capture Mode</li>
-                        <li>Pre-processing of face images</li>
-                        <li>Multiple modes of detection including skin tone and head shape</li>
-                        <li>Multiple recognition engines including eigenfaces.</li>
-                        <li>Text-To-Speech</li>
-                    </ul>
-                </div>
-            </div>
-
-		</div>
-
-		
-	</div>
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="javascripts/foundation/foundation.js"></script>
-	
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-	
-	<script src="javascripts/foundation/foundation.section.js"></script>
-	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
-	
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-	
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-	
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
-	
-  
-  <script>
-    $(document).foundation();
-  </script>
+            <!-- <div class="side">
+              <i class="huge circular flickr icon"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted bluebg page grid segment" id='footer'>
+    <div class="ten wide column">
+      <div class="ui three column stackable grid">
+        <div class="column">
+          <div class="ui header">Services</div>
+          <div class="ui inverted link list">
+            <a class="item">API Design</a>
+            <a class="item">Data Marshalling</a>
+            <a class="item">Asynchronous Tasks</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui header">Community</div>
+          <div class="ui inverted link list">
+            <a class="item" href="https://github.com/piemonster">Github</a>
+            <a class="item" href="https://bitbucket.com/piemonster">Bitbucket</a>
+            <!-- <a class="item">Mission Statement</a> -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui header">Website</div>
+          <div class="ui inverted link list">
+            <a class="item" href="old/index.html">Old Website</a>
+            <!-- <a class="item">How is it built?</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide right floated aligned column">
+      <h3 class="ui header">Are you planning a new project?</h3>
+      <p>Find out how we can help you</p>
+      <p>info@piemonster.me</p>
+      <p>01273 782 702</p>
+    </div>
+  </div>
 </body>
 </html>
